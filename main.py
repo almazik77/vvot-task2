@@ -72,12 +72,3 @@ def crop_image(image, face_coords, bucket_id, object_id):
         sqs.send_message(QueueUrl=q_url, MessageBody=filename)
 
 
-event = {'messages': [{'event_metadata': {'event_id': '57d2d648-fa88-4461-b3a0-c446f66fdf3d',
-                                          'event_type': 'yandex.cloud.events.storage.ObjectCreate',
-                                          'created_at': '2021-10-28T08:17:18.891510505Z',
-                                          'tracing_context': {'trace_id': '949141c8c329054f', 'span_id': '',
-                                                              'parent_span_id': ''}, 'cloud_id': 'b1gs4a51unfsngpt0hke',
-                                          'folder_id': 'b1gmf17gsailfbs3ogri'},
-                       'details': {'bucket_id': 'cloudphoto-vvot21-28', 'object_id': '01.png'}}]}
-
-handler(event, '')
