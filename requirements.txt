@@ -1,0 +1,4 @@
+boto3==1.13.15
+attrs==19.3.0
+requests~=2.26.0
+Pillow==8.4.0
